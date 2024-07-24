@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <form onsubmit="display(event)">
+    <input type="radio" name="gender" value="male" />
+    <label>Male</label><br/>
+    <input type="radio" name="gender" value="female" />
+    <label>FeMale</label><br/>
+    <input type="radio" name="gender" value="other" />
+    <label>Other</label><br/>
+    <input type="submit" />
+</form>
+    <script>
+        function display(event){
+            let gen=event.target.gender.value;
+            alert("Gender is "+gen);
+        }
+    </script>
+</body>
+</html>
